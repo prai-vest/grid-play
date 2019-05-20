@@ -12,6 +12,7 @@ import GridWithColumnGroups from './GridWithColumnGroups'
 import GridWithRowGroups from './GridWithRowGroups'
 import GridWithPagination from './GridWithPagination'
 import GridWithExporting from './GridWithExporting'
+import Demo from './Demo'
 
 
 const GridsAsObject = {
@@ -29,6 +30,7 @@ const GridsAsObject = {
   [GridWithRowGroups.key]: GridWithRowGroups,
   [GridWithPagination.key]: GridWithPagination,
   [GridWithExporting.key]: GridWithExporting,
+  [Demo.key]: Demo,
 }
 
 const GridsAsArray = []

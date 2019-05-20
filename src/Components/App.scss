@@ -3,7 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   padding: 0;
-  line-height: 1.4
+  line-height: 1.4;
 }
 
 h1, h2 {
@@ -25,7 +25,7 @@ h1, h2 {
   width: 230px;
   padding: 1rem 0;
   border-right: 1px solid #bf4f;
-  
+
   ul.references {
     padding-left: 0;
 
@@ -56,4 +56,7 @@ h1, h2 {
 label {
   font-size: 12px;
   margin-right: 5px;
+}
+.ag-theme-balham .ag-cell.rag-amber {
+  background: aquamarine;
 }
