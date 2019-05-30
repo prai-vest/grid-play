@@ -15,6 +15,10 @@ const exportClickCallback = () => {
   gridApi.exportDataAsCsv()
 }
 
+const exportExcelClickCallback = () => {
+  gridApi.exportDataAsExcel()
+}
+
 const onGridReadyCallback = (params) => {
   gridApi = params.api
 }
@@ -81,7 +85,7 @@ const GridInfo = () => (
       <input type="text" onInput={onInputCallback} />
     </p>
     <p>
-      <button type="button" onClick={exportClickCallback}>Export to CSV</button>
+      <button type="button" onClick={exportClickCallback}>Export to CSV</button>{' '}<button type="button" onClick={exportExcelClickCallback}>Export to Excel</button>
     </p>
   </>
 )
