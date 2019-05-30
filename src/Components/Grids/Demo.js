@@ -11,6 +11,10 @@ const onInputCallback = (evt) => {
   gridApi.setQuickFilter(evt.target.value);
 }
 
+const exportClickCallback = () => {
+  gridApi.exportDataAsCsv()
+}
+
 const onGridReadyCallback = (params) => {
   gridApi = params.api
 }
@@ -75,6 +79,9 @@ const GridInfo = () => (
     <p>
       <label>Quick filter</label>
       <input type="text" onInput={onInputCallback} />
+    </p>
+    <p>
+      <button type="button" onClick={exportClickCallback}>Export to CSV</button>
     </p>
   </>
 )
